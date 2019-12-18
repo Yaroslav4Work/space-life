@@ -23,8 +23,8 @@
         <ul>
             <li><a href="main" class="space-js space-link">Домооой!!!</a></li>
             <li><a href="my-page" class="space-js space-link">Великий Я</a></li>
-            <li><a href="seagoul.php" class="space-js space-link">Чайка-Рон-Марина-Блокчайник</a></li>
-            <li><a href="roma10.php" class="space-js space-link">Рома10</a></li>
-            <li><a href="AdmiralDR.php" class="space-js space-link">Могущественный Адмирал</a></li>
+            <li><a href="seagoul" class="space-js space-link">Чайка-Рон-Марина-Блокчайник</a></li>
+            <li><a href="roma10" class="space-js space-link">Рома10</a></li>
+            <li><a href="AdmiralDR" class="space-js space-link">Могущественный Адмирал</a></li>
         </ul></nav>
 </header>
