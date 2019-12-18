@@ -1,21 +1,27 @@
 @font-face {
-    font-family: 'mr_TickingTimebombBBG';
-    src: url('../assets/fonts/mr_TickingTimebombBBG.otf') format("truetype");
+    font-family: 'AA-Spaceman';
+    src: url('../assets/fonts/AA-Spaceman.ttf') format("truetype");
 }
 
 html, body {
     min-height: 100vh;
     box-sizing: border-box;
     margin: 0;
-    font-family: 'mr_TickingTimebombBBG', sans-serif;
-    font-size: 95%;
+    font-family: 'Monaco', monospace;
 }
 
-section.space-js {
-    position: relative;
-    width: 100%;
-    height: 100vh;
+@media (max-width: 1024px) {
+    html, body {
+        font-size: 110%;
+    }
 }
+
+@media (min-width: 1024px) {
+    html, body {
+        font-size: 90%;
+    }
+}
+
 
 .space-js {
     box-sizing: border-box;
@@ -30,12 +36,23 @@ section.space-js {
 
 .space-js.space-container {
     position: relative;
-    width: 70vw;
     height: 100vh;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+@media (max-width: 1024px) {
+    .space-js.space-container {
+        width: 100vw;
+    }
+}
+
+@media (min-width: 1024px) {
+    .space-js.space-container {
+        width: 70vw;
+    }
 }
 
 .space-js.space-title, .space-js.space-link {
@@ -45,6 +62,150 @@ section.space-js {
     text-transform: uppercase;
     text-decoration: none;
 }
+
+.space-js.holographic-png {
+    background: rgba(55, 155, 255, .6);
+    border: 2px solid rgba(55, 155, 255, .9);
+}
+
+.space-js.horizontal-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+
+
+header.space-js {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    margin-bottom: .15rem;
+}
+
+@media (max-width: 1024px) {
+    header.space-js {
+        height: 5vh;
+    }
+}
+
+@media (min-width: 1024px) {
+    header.space-js {
+        height: 10vh;
+    }
+}
+
+.space-js.space-nav {
+    width: inherit;
+    height: inherit;
+    animation: background-color-blick 1s ease-in-out;
+}
+
+.space-js.space-nav .mobile-menu-icon {
+    font-size: 250%;
+    width: 95%;
+    text-align: right;
+    color: white;
+    display: none;
+    cursor: pointer;
+}
+
+.space-js.space-nav ul {
+    margin: 0;
+    padding: 0;
+    width: inherit;
+    height: inherit;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+.space-js.space-nav ul li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 .25rem;
+}
+
+
+
+section.space-js {
+    position: relative;
+    width: 100%;
+}
+
+@media (max-width: 1024px) {
+    section.space-js {
+        position: relative;
+        width: 100%;
+        height: 130vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+@media (min-width: 1024px) {
+    section.space-js {
+        position: relative;
+        width: 100%;
+        height: 100vh;
+    }
+}
+
+.space-js.object-card {
+    padding: .15rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+@media (max-width: 1024px) {
+    .space-js.object-card {
+        flex-direction: column;
+        padding: 2rem;
+        font-size: 150%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .space-js.object-card {
+        flex-direction: row;
+    }
+}
+
+.space-js.object-card * {
+    margin: .15rem;
+}
+
+@media (max-width: 1024px) {
+    .space-js.object-card .object-preview {
+        display: block;
+        width: 100%;
+        height: auto;
+        margin: 2rem auto;
+    }
+}
+
+@media (min-width: 1024px) {
+    .space-js.object-card .object-preview {
+        width: 20vw;
+        height: auto;
+    }
+}
+
+footer.space-js {
+    position: relative;
+    width: 100%;
+    height: 5vh;
+    text-align: center;
+    z-index: 9998;
+}
+
+
 
 @keyframes background-color-blick {
     10% {
@@ -78,160 +239,5 @@ section.space-js {
         background: linear-gradient(90deg, rgba(55, 155, 255, .6), rgba(55, 155, 255, .6), rgba(55, 155, 255, .6), rgba(55, 155, 255, .6), rgba(55, 155, 255, .6), rgba(55, 155, 255, .6), rgba(55, 155, 255, .6), rgba(55, 155, 255, .6), rgba(55, 155, 255, .6), rgba(55, 155, 255, .6), rgba(255, 255, 255, 1));
     }
 }
-
-.space-js.holographic-png {
-    background: rgba(55, 155, 255, .6);
-    border: 2px solid rgba(55, 155, 255, .9);
-}
-
-.space-js.object-card {
-    padding: .15rem;
-    display: flex;
-    justify-content: space-around;
-}
-
-.space-js.object-card * {
-    margin: .15rem;
-}
-
-.space-js.object-card-smart-info {
-
-}
-
-.space-js.object-preview {
-
-}
-
-.space-js.object-description {
-
-}
-
-.space-js.space-nav {
-    width: inherit;
-    height: inherit;
-    animation: background-color-blick 1s ease-in-out;
-}
-
-.space-js.horizontal-list {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-
-.space-js.space-map-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.space-js.space-map {
-    width: 90%;
-    height: 90%;
-    margin: 3rem auto;
-}
-
-header.space-js {
-    position: fixed;
-    width: 100%;
-    height: 10vh;
-    top: 0;
-    left: 0;
-    z-index: 9999;
-    margin-bottom: .15rem;
-}
-
-.space-js.space-nav .mobile-menu-icon {
-    font-size: 250%;
-    width: 95%;
-    text-align: right;
-    color: white;
-    display: none;
-    cursor: pointer;
-}
-
-.space-js.space-nav ul {
-    margin: 0;
-    padding: 0;
-}
-
-
-@media not (max-width: 70em) {
-    .space-js.space-nav ul {
-        width: inherit;
-        height: inherit;
-        list-style: none;
-        display: flex;
-        justify-content: space-around;
-    }
-}
-
-.space-js.space-nav ul li {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 0 .25rem;
-}
-
-footer.space-js {
-    position: absolute;
-    width: 100%;
-    height: 10vh;
-    bottom: 0;
-    text-align: center;
-    z-index: 9998;
-}
-
-@media all and (max-width: 70em) {
-    body {
-        font-size: 150%;
-    }
-
-    header.space-js {
-        min-height: 5vh;
-        height: auto;
-    }
-
-    header.space-js nav ul {
-        flex-direction: column;
-        display: none;
-    }
-
-    header.space-js nav ul li {
-        height: 100%;
-    }
-
-    header.space-js nav ul li .space-link {
-        height: inherit;
-        border-bottom: 2px solid white;
-        text-align: right;
-        padding: .5rem 1rem .5rem .5rem;
-        background-color: rgba(0, 0, 0, .5);
-    }
-
-    .space-js.space-nav .mobile-menu-icon {
-        display: block;
-    }
-
-    .space-js.space-container {
-        width: 100%;
-    }
-
-    .space-js.object-card {
-        flex-wrap: wrap;
-    }
-
-    .space-js.object-card img {
-        margin: .15rem auto;
-    }
-
-    .space-js.object-card-smart-info {
-        display: flex;
-        flex-direction: column;
-    }
-}
-
-
 
 

@@ -4,6 +4,15 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/SpaceJS.css">
     <title>SpaceJS</title>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-VCS63EFM1N"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-VCS63EFM1N');
+    </script>
 </head>
 <body>
 <header class="space-js space-header holographic-display">
@@ -17,6 +26,5 @@
             <li><a href="seagoul.php" class="space-js space-link">Чайка-Рон-Марина-Блокчайник</a></li>
             <li><a href="roma10.php" class="space-js space-link">Рома10</a></li>
             <li><a href="AdmiralDR.php" class="space-js space-link">Могущественный Адмирал</a></li>
-            <li><a href="#" class="space-js space-link" onclick="normalFont()">Атмосфера - атмосферой, но дайте нормальный шрифт пж...</a></li>
         </ul></nav>
 </header>

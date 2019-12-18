@@ -1,4 +1,3 @@
-<?php include "header.php"; ?>
 <section class="space-js main-layer">
     <div class="space-js space-palace"></div>
     <div class="space-js space-container">
@@ -28,4 +27,3 @@
         </div>
     </div>
 </section>
-<?php include "footer.php"; ?>
