@@ -6,7 +6,7 @@
         </div>
         <div class="space-js holographic-display object-card">
             <div class="space-js object-card-smart-info">
-                <img src="assets/imgs/space-pilot.png" alt="pilot-img" class="space-js holographic-png object-preview" width="200" height="200">
+                <img src="./assets/imgs/space-pilot.png" alt="pilot-img" class="space-js holographic-png object-preview" width="200" height="200">
                 <h4 class="space-js space-title">Великий Рома, майн сенсей</h4>
                 <ul class="space-js veritcal-list object-characteristics">
                     <li class="space-js veritcal-list-item">19 годиков</li>

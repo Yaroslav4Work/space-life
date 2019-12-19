@@ -1,19 +1,20 @@
 <?php
 
-include "kernel/kernel.php";
-include "kernel/router.php";
+require "kernel/kernel.php";
+require "models/UsersModel.php";
+use models\UsersModel;
 
-/*$url = ((!empty($_SERVER['HTTPS'])) ? 'https' : 'http') . '://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
-$url = explode('?', $url);
-$url = $url[0];
-$url_parts = explode('/', $url);
-$page_body = $url_parts[4] != '' ? $url_parts[4].'.php' : 'main.php';
 
-include "header.php";
+$router->build_page(
+    'views/static_parts/header.php',
+    $router->get_main_part_for_page(),
+    'views/static_parts/footer.php'
+);
 
-include $page_body;
-
-include "footer.php";*/
-
-get_page_by_parts(HEADER_PATH, FOOTER_PATH);
+$user = new UsersModel();
+print_r($user->insert([
+    'login' => 'ThridModelAndDBTest',
+    'password' => 'ThridModelAndDBTest'
+]));
+/*print_r($user->select('*'));*/
 
